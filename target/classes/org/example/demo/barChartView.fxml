@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Imports for various JavaFX classes -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Main container VBox setup -->
+<VBox fx:id="barChartViewContainter" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.BarChartViewController">
+    <!-- Title Label with custom font and bloom effect -->
+    <Label styleClass="chart-title" text="STAR WARS CHARACTERS" textFill="WHITE">
+        <font>
+            <Font name="Arial Bold" size="23.0" />
+        </font>
+        <effect>
+            <Bloom />
+        </effect>
+        <VBox.margin>
+            <Insets left="29.0" top="29.0" />
+        </VBox.margin>
+    </Label>
+    <!-- ButtonBar for navigation between different views -->
+    <ButtonBar buttonMinWidth="100.0" layoutX="213.0" layoutY="75.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="600.0" styleClass="buttonbar" stylesheets="@style.css">
+        <buttons>
+            <!-- Buttons for switching views -->
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#barChartViewButton" text="Check Bar Chart" textAlignment="CENTER" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#pieChartViewButton" text="Check Pie Chart" textAlignment="CENTER" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#tableViewButton" text="Check Table" textAlignment="CENTER"  />
+        </buttons>
+        <VBox.margin>
+            <Insets left="213.0" right="187.0" />
+        </VBox.margin>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </ButtonBar>
+    <!-- BarChart setup with custom styling -->
+    <BarChart fx:id="barChart" alternativeColumnFillVisible="true" barGap="5.0" categoryGap="5.0" layoutX="54.0" layoutY="124.0" maxHeight="800.0" maxWidth="1200.0" minHeight="400.0" minWidth="400.0" prefHeight="450.0" prefWidth="890.0" styleClass="barchart" stylesheets="@style.css" title="AFFILIATION" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="124.0">
+        <xAxis>
+            <!-- CategoryAxis for the X axis of the chart -->
+            <CategoryAxis focusTraversable="true" label="AFFILIATION" side="BOTTOM" styleClass="chart-axis" stylesheets="@style.css" tickLabelFill="WHITE" tickLabelGap="10.0" fx:id="xAxis">
+                <tickLabelFont>
+                    <Font name="System Bold" size="12.0" />
+                </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+            <!-- NumberAxis for the Y axis of the chart -->
+            <NumberAxis focusTraversable="true" label="NUMBER OF CHARACTERS" minorTickCount="1" side="LEFT" styleClass="chart-numbers" tickLabelGap="1.0">
+                <tickLabelFont>
+                    <Font size="12.0" />
+                </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+    </BarChart>
+</VBox>

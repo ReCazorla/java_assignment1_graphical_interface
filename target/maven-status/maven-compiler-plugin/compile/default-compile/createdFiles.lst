@@ -1,0 +1,7 @@
+org/example/demo/Characters.class
+org/example/demo/DatabaseConnector.class
+org/example/demo/TableViewController.class
+org/example/demo/BarChartViewController.class
+org/example/demo/App.class
+org/example/demo/PieChartViewController.class
+module-info.class

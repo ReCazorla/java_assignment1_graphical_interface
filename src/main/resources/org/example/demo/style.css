@@ -1,0 +1,106 @@
+/* Style for the anchor pane background, setting a Star Wars themed image */
+.anchor {
+    -fx-background-image: url("images/luke.png"); /* Background image for the container */
+    -fx-background-repeat: no-repeat; /* Image does not repeat */
+    -fx-background-position: center; /* Image positioned at the center */
+    -fx-background-size: cover; /* Image covers the entire area */
+    -fx-width:100%; /* Ensures the width covers 100% of the container */
+}
+
+/* Style for bar charts with a semi-transparent black background and rounded corners */
+.barchart {
+    -fx-background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-padding: 20px; /* Padding around the chart */
+}
+
+/* Style for chart titles, using a custom Star Wars font and yellow color */
+.chart-title {
+    -fx-text-fill: #fff700; /* Yellow text color */
+    -fx-font-family: "Star Jedi"; /* Custom Star Wars font */
+    -fx-font-size: 40px; /* Font size */
+}
+
+/* Style for the axes of the chart, with white text and a custom font */
+.chart-axis {
+    -fx-text-fill: #ffffff; /* White text color for the axis */
+    -fx-tick-label-fill: #ffffff; /* White color for the tick labels */
+    -fx-padding: 0px 0px 20px 0px; /* Padding around the axis */
+    -fx-text-transform: uppercase; /* Text in uppercase */
+    -fx-font-family: "Star Jedi"; /* Custom Star Wars font */
+    -fx-font-weight: bold; /* Bold font weight */
+}
+
+/* Style for the numeric labels on the chart, in bold and a specific size */
+.chart-numbers {
+    -fx-text-fill: #fff700; /* Yellow text color */
+    -fx-tick-label-fill: white; /* White tick labels */
+    -fx-text-size : 13px; /* Font size for numbers */
+    -fx-font-weight: bold; /* Bold font weight */
+}
+
+/* Style for the plot background of the chart */
+.chart-plot-background {
+    -fx-background-color: rgba(69, 69, 69, 0.8); /* Semi-transparent dark gray background */
+}
+
+/* Style for vertical grid lines in the chart */
+.chart-vertical-grid-lines {
+    -fx-stroke: #f2ecd8; /* Light color for vertical lines */
+    -fx-stroke-dash-array: none; /* Solid lines */
+    -fx-stroke-width: 1px; /* Line width */
+}
+
+/* Style for horizontal grid lines in the chart */
+.chart-horizontal-grid-lines {
+    -fx-stroke: white; /* White color for horizontal lines */
+    -fx-stroke-dash-array: none; /* Solid lines */
+    -fx-stroke-width: 1px; /* Line width */
+}
+
+/* Style for the bars in the bar chart, with a specific yellow color and rounded top corners */
+.chart-bar {
+    -fx-background-color: #fde402a4; /* Semi-transparent yellow */
+    -fx-background-radius: 2px 2px 0px 0px; /* Rounded corners at the top */
+}
+
+/* Style for the bars when hovered over, changing the color slightly */
+.chart-bar:hover {
+    -fx-background-color: #fffefdc5; /* Lighter yellow on hover */
+}
+
+/* Style for the button bar */
+.buttonbar {
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-text-alignment: center; /* Center text alignment */
+}
+
+/* Styles for the table view, row cells, and selected row cells, with specific colors and transparency */
+.table-view {
+    -fx-background-color: rgba(0,0,0,0.4); /* Semi-transparent black background for the table */
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(255,248,224,0.8); /* Light semi-transparent background for cells */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(45, 45, 45, 0.6); /* Darker color for selected cells */
+}
+
+/* Style for names using the Star Wars font, bold and with letter spacing */
+.nameStyle {
+    -fx-font-family: "Star Jedi";
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 1px;
+}
+
+/* Style for pie chart labels with a custom font, bold weight, specific size, and background */
+.chart-pie-label {
+    -fx-font-family: "Star Jedi"; /* Star Wars font */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 16px; /* Font size */
+    -fx-fill: #ffcc00; /* Text color */
+    -fx-background-color: black; /* Background color */
+    -fx-background-radius: 20px; /* Rounded background */
+}
